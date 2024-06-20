@@ -1,0 +1,130 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('bg_2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333333;
+    margin: 0;
+    font-size: 2em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.task-form {
+    margin-bottom: 20px;
+}
+
+.task-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-form input, 
+.task-form textarea, 
+.task-form select, 
+.task-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.task-form input:focus, 
+.task-form textarea:focus, 
+.task-form select:focus, 
+.task-form button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.task-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+.task-form button:hover {
+    background-color: #0056b3;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid transparent;
+}
+
+.task h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333333;
+}
+
+.task p {
+    margin: 5px 0;
+    color: #666666;
+}
+
+.task .meta {
+    font-size: 0.9em;
+    color: #999999;
+}
+
+.task button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 1.2em;
+}
+
+.task button:hover {
+    color: #cc0000;
+}
+
+.priority-high {
+    border-left-color: #ff0000;
+}
+
+.priority-medium {
+    border-left-color: #ffa500;
+}
+
+.priority-low {
+    border-left-color: #008000;
+}
